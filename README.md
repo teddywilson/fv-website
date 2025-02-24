@@ -1,7 +1,5 @@
 # fv-website
 
-It's live (for now) at: https://teddywilson.github.io/fv-website/.
-
 ## Usage
 
 1. Install [Gatsby](https://www.gatsbyjs.com/):
