@@ -1,0 +1,1 @@
+- [Design philosophy](project_design_philosophy.md) — punk and minimal, don't overdesign
