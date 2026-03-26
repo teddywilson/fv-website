@@ -24,7 +24,7 @@ const ShowEntry = ({ show, shows, i, yearGlyphs }) => {
           })}
         </div>
         <div className="show-content">
-          {show.venue} <span className="show-detail">– {show.location}</span>
+          {show.venue} – {show.location}
           <span className="show-bands"> · {show.bands}</span>
         </div>
       </div>
