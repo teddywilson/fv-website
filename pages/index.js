@@ -50,6 +50,11 @@ export default function IndexPage({ shows, text, yearGlyphs }) {
       </Head>
       <div>
         <h1>Family Vision</h1>
+        <img
+          src="/press/DSCF1618.JPG"
+          alt="Family Vision"
+          className="press-photo"
+        />
         <div className="subheading">
           familyvisiontheband@gmail.com
           <br />
