@@ -66,7 +66,6 @@ export default function IndexPage({ shows, text, yearGlyphs }) {
               />
             ))}
         </ul>
-        <div className="footer">· · ·</div>
       </div>
     </>
   )
