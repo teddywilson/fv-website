@@ -103,12 +103,12 @@ h1 {
 
   @include md {
     font-size: 52px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   @include lg {
     font-size: 72px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 }
 
@@ -125,8 +125,12 @@ h1 {
 .press-photo {
   width: 100%;
   max-width: 640px;
-  margin: 0 0 16px;
+  margin: 0 0 20px;
   display: block;
+
+  @include lg {
+    margin: 0 0 24px;
+  }
 }
 
 .date-header {
