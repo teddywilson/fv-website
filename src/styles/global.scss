@@ -89,7 +89,7 @@ ul {
 }
 
 h1 {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   font-size: 28px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -115,7 +115,7 @@ h1 {
 .subheading {
   font-size: 13px;
   line-height: 1.8;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 
   @include md {
     font-size: 14px;
@@ -125,12 +125,12 @@ h1 {
 .press-photo {
   width: 100%;
   max-width: 640px;
-  margin: 24px 0;
+  margin: 0 0 16px;
   display: block;
 }
 
 .date-header {
-  margin: 32px 0 8px;
+  margin: 16px 0 4px;
   font-size: 12px;
   font-family: "Roboto Mono", monospace;
   letter-spacing: 0.15em;
