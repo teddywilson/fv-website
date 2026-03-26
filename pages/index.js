@@ -36,8 +36,15 @@ export default function IndexPage({ shows, text, yearGlyphs }) {
     <>
       <Head>
         <title>Family Vision</title>
-        <meta name="description" content="Family Vision Website" />
+        <meta name="description" content="Family Vision" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Family Vision" />
+        <meta property="og:description" content="familyvision.band" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://familyvision.band" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Family Vision" />
+        <meta name="twitter:description" content="familyvision.band" />
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>△</text></svg>" />
       </Head>
       <div>
