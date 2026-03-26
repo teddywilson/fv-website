@@ -1,20 +1,29 @@
 name: Deploy
 
-# Deploys on pushes to main, as well as every hour.
 on:
   push:
     branches:
       - main
   schedule:
     - cron: "0 * * * *"
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Sync calendar
-        run: "${GITHUB_WORKSPACE}/sync.sh"
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: gh-pages
+          node-version: 20
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: ./sync.sh
+      - run: yarn build
+      - run: |
+          touch out/.nojekyll
+          cp CNAME out/CNAME
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
