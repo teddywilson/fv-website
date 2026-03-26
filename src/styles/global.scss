@@ -133,9 +133,9 @@ h1 {
 .show-container {
   display: flex;
   flex-direction: row;
-  padding: 2px 0;
+  padding: 4px 0;
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.4;
 
   @include md {
     font-size: 14px;
@@ -160,6 +160,7 @@ h1 {
 }
 
 .show-bands {
-  opacity: 0.5;
+  opacity: 0.45;
+  font-size: 0.9em;
 }
 
