@@ -68,7 +68,6 @@ a {
 
 body {
   margin: 20px;
-  padding-bottom: 24px;
 
   @include sm {
     margin: 32px;
@@ -161,7 +160,7 @@ h1 {
 }
 
 .footer {
-  margin-top: 48px;
+  margin-top: 16px;
   font-size: 11px;
   font-family: "Roboto Mono", monospace;
   opacity: 0.3;
