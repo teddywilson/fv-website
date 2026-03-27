@@ -51,7 +51,7 @@ export default function IndexPage({ shows, text, yearGlyphs }) {
       <div>
         <h1>Family Vision</h1>
         <img
-          src="/press/DSCF1618.JPG"
+          src="/press/DSCF1618.jpg"
           alt="Family Vision"
           className="press-photo"
         />
